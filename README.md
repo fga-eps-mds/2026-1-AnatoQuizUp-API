@@ -12,28 +12,28 @@ API inicial do projeto AnatoQuizUp usando `Node.js`, `TypeScript`, `Express`, `P
 - Docker Compose para banco local
 - ESLint + Prettier
 
-## Estrutura
+## Estrutura de Pastas
 
 ```text
 anatoquizup-api/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── workflows/
 ├── prisma/
 │   ├── migrations/
-│   ├── schema.prisma
-│   └── seed.ts
 ├── src/
 │   ├── config/
 │   ├── modules/
-│   │   └── exemplo/
+│   │   └── domain/
+│   │       ├── dto/
+│   │       └── __tests__/
 │   ├── shared/
-│   └── server.ts
+│   │   ├── constants/
+│   │   ├── errors/
+│   │   ├── middlewares/
+│   │   ├── types/
+│   │   └── utils/
 ├── tests/
-│   └── e2e/
-├── .env.example
-├── docker-compose.yml
-├── Dockerfile
-├── eslint.config.js
-├── package.json
-└── tsconfig.json
 ```
 
 ## Setup local
